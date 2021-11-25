@@ -1,27 +1,3 @@
-/*
- <div class="close-btn">
-        <i class="fas fa-angle-left"></i>  Back 
-    </div>
-    <img src="https://flagcdn.com/eg.svg" alt="">
-<div class="infos">
-        <h3>name of country</h3>
-    <div class="details">
-        <ul>
-            <li>Native Name: <span>Afghan</span></li>
-            <li>Population: <span>11,125,2</span></li>
-            <li>Region: <span>Cairo</span></li>
-            <li>Sub Region: <span>Sub Region</span></li>
-            <li>Capital: <span>cairo</span></li>
-        </ul>
-        <ul>
-            <li>Top Level Domain: <span>.be</span></li>
-            <li>currencies: <span>coin here</span></li>
-            <li>langueages: <span>name,name,name</span></li>
-        </ul>
-    </div>
-</div>
-*/
-
 let countriesContainer = document.querySelector(".countries-section");
 
 let regionFilter = document.querySelectorAll(".region");
