@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <title>Rest Countries</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Where in the world?</h1>
+      <button class="btn" id="night-btn">
+        <i class="far fa-moon"></i> Dark mode
+      </button>
+    </div>
+  </header class="dark-mode">
+  <section class="search">
+    <div class="container">
+      <form action="">
+        <input class="input" type="text" placeholder="Search for country..."  id="searchBox"/>
+      </form>
+      <div class="filter">
+        <p id="filterBtn">
+          Filter by Region <i class="fas fa-angle-down"></i>
+        </p>
+        <ul id="filterUl">
+          <li class="region" id="all-countries">All</li>
+          <li class="region">Africa</li>
+          <li class="region">Asia</li>
+          <li class="region">Europe</li>
+          <li class="region">Americas</li>
+          <li class="region">Oceania</li>
+        </ul>
+      </div>
+    </div>
+  <section class="countreis">
+    <div class="loading load" id="loading">Countries loading...</div>
+    <div class="countries-section container" id="countriesContainer"></div>
+    <div class="modal">
+        <div class="container">
+           
+        </div>
+    </div>
+  </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
