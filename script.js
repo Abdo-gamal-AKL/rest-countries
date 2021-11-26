@@ -32,7 +32,6 @@ function apiFunciton(result) {
   darkModeFunction();
   document.querySelectorAll(".country").forEach((coun) => {
     coun.addEventListener("click", () => {
-      console.log(result[coun.dataset.index - 1]);
       appendModalelements(result[coun.dataset.index - 1]);
     });
   });
