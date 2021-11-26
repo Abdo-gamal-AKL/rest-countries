@@ -123,7 +123,7 @@ header .container button {
   color: #333;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  top: 50px;
+  top: 35px;
   z-index: 20;
 }
 .search .container form {
@@ -213,7 +213,7 @@ header .container button {
   width: 100%;
   text-align: center;
   position: absolute;
-  z-index: -1;
+  z-index: 1000000000000000000000000000000000000000;
 }
 .loading.load {
   display: block;
@@ -374,13 +374,15 @@ header {
   color: hsl(209, 23%, 22%) !important;
   transition: 0.3s;
 }
-.modal .container .close-btn:hover,
-.modal .container .close-btn.dark-mode {
+.modal .container .close-btn:hover {
   background-color: hsl(209, 23%, 22%) !important;
   color: hsl(0, 0%, 98%) !important;
   transition: 0.3s;
 }
-.modal .container .close-btn.dark-mode {
+.modal.dark-mode .container .close-btn {
+  background-color: hsl(209, 23%, 22%) !important;
+  color: hsl(0, 0%, 98%) !important;
+  transition: 0.3s;
   box-shadow: none !important;
 }
 @media (max-width: 1130px) {
@@ -435,5 +437,36 @@ header {
 }
 .modal.dark-mode h3 {
   color: hsl(0, 0%, 98%) !important;
+}
+@media (max-width: 450px) {
+  header {
+    z-index: 10 !important;
+  }
+  .modal {
+    top: 0 !important;
+    padding-top: 0px;
+  }
+  .modal .container {
+    max-width: 1050px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    padding: 0 10px;
+    margin: 0;
+    height: 100vh;
+    overflow: scroll;
+  }
+  .modal .container img {
+    width: 253px;
+    position: relative;
+    top: 57px;
+  }
+  .modal .container .close-btn {
+    top: 13px !important;
+  }
 }
 /* styling the modal */
