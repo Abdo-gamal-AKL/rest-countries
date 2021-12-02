@@ -1,6 +1,12 @@
-let countriesContainer = document.querySelector(".countries-section");
+const countriesContainer = document.querySelector(".countries-section");
 
-let regionFilter = document.querySelectorAll(".region");
+const regionFilter = document.querySelectorAll(".region");
+
+const form = document.querySelector(".form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+})
 
 fetch("https://restcountries.com/v2/all")
   .then((resolved) => {
